@@ -39,7 +39,7 @@ def main():
     parser.add_argument("-t", "--target_name", required=True, help="Target name")
     parser.add_argument("-H", "--hairpin", required=True, help="Hairpin No.")
     parser.add_argument("-f", "--output_format", choices=["fasta", "csv"], default="csv", help="Output format")
-    parser.add_argument("-o", "--output_directory", required=True, help="Output directory")
+    parser.add_argument("-o", "--output_directory", default=".", help="Output directory")
     args = parser.parse_args()
 
     # probe_regionファイル読み込み
