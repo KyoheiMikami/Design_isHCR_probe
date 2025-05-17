@@ -16,31 +16,25 @@
 
 ### `Pick_ProbeRegion.py`について
 
-option：
-
-|||
+|option||
 |--|--|
-|-i, —input_file|入力ファイルを指定する、必須|
-|-m, —gc_min|結合サイトのGCの最小値を指定する、デフォルトは`45`|
-|-M, —gc_max|結合サイトのGCの最大値を指定する、デフォルトは`55`|
-|-t, —target_name|プローブの名称を指定する、必須|
-|-o, —output_directory|出力先を指定する、デフォルトはカレントディレクトリ|
+|`-i`, `—input_file`|入力ファイルを指定する、必須|
+|`-m`, `—gc_min`|結合サイトのGCの最小値を指定する、デフォルトは`45`|
+|`-M`, `—gc_max`|結合サイトのGCの最大値を指定する、デフォルトは`55`|
+|`-t`, `—target_name`|プローブの名称を指定する、必須|
+|`-o`, `—output_directory`|出力先を指定する、デフォルトはカレントディレクトリ|
 
-output：
-
-|||
+|output||
 |--|--|
 |`Target_ProbeRegion.csv`|配列やGCを確認できる`.csv`|
 |`Target_ProbeRegion.fasta`|Blast検索用のマルチファスタ|
 
 ### `MakeProbe.py`について
 
-option：
-
-|||
+|option||
 |--|--|
-|-i, —input_file|入力ファイルを指定する、必須|
-|-t, —target_name|プローブの名称を指定する、必須|
-|-H, —hairpin|Short hairpin amplifierの蛍光色素を指定する、必須|
-|-f, —output_format|出力ファイルの形式を指定する、デフォルトは`.csv`|
-|-o, —output_directory|出力先を指定する、デフォルトはカレントディレクトリ|
+|`-i`, `—input_file`|入力ファイルを指定する、必須|
+|`-t`, `—target_name`|プローブの名称を指定する、必須|
+|`-H`, `—hairpin`|Short hairpin amplifierの蛍光色素を指定する、必須|
+|`-f`, `—output_format`|出力ファイルの形式を指定する、デフォルトは`.csv`|
+|`-o`, `—output_directory`|出力先を指定する、デフォルトはカレントディレクトリ|
