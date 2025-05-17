@@ -60,7 +60,7 @@ def main():
     parser.add_argument("-m", "--gc_min", default=45, help="GC min")
     parser.add_argument("-M", "--gc_max", default=55, help="GC max")
     parser.add_argument("-t", "--target_name", required=True, help="target name")
-    parser.add_argument("-o", "--output_directory", required=True, help="Output directory")
+    parser.add_argument("-o", "--output_directory", default=".", help="Output directory")
     args = parser.parse_args()
 
     try:
@@ -70,7 +70,7 @@ def main():
         sys.exit(1)
 
     # ProbeRegionの選定
-    region_df = pick_probe_region(record, args.target_name, args.gc_min, args.gc_max)
+    region_df = pick_probe_region(record, args.target_name, int(args.gc_min), int(args.gc_max))
 
     # 最も多くの非重複領域を得る stem_region_num を探索
     max_count = -1
